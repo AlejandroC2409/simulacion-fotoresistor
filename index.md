@@ -1,6 +1,10 @@
+---
+usemathjax: true
+---
+
 # Simulación de Fotoresistores
 
-## 📌 Descripción
+## Descripción
 Este proyecto simula el comportamiento de la resistencia en un fotoresistor en función de la temperatura y la iluminación. Está diseñado para analizar materiales semiconductores como **CdS** y **CdSe** y su respuesta a distintas condiciones ambientales. Se basa en modelos físicos que consideran la generación y recombinación de portadores de carga, así como la influencia de la temperatura y la iluminación en la conductividad del material.
 
 ##  Fundamentos Teóricos
@@ -91,7 +95,7 @@ El programa generará dos gráficos:
 
 2. **Resistencia en oscuridad**: representa la resistencia en el caso de total oscuridad, la cual para algunos usos sirve como referencia.
 
-## 🛠 Tecnologías Usadas
+##  Tecnologías Usadas
 - **Python 3**
 - **NumPy** para cálculos numéricos.
 - **Matplotlib** para visualización de datos.
