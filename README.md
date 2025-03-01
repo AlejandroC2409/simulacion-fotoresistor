@@ -1,7 +1,7 @@
 # Simulación de Fotoresistores
 
 ## Descripción
-Este proyecto simula el comportamiento de la resistencia en un fotoresistor en función de la temperatura y la iluminación. Está diseñado para analizar semiconductores basados en Sulfuro de Cadmio (**CdS**) y seleniuro de Cadmio **CdSe**, ya que son estos los materiales más comunmente usados para la creación de este tipo de semiconductor debido a sus propiedades, se analizará su respuesta a distintas condiciones ambientales. Se basa en modelos físicos que consideran la generación y recombinación de portadores de carga, así como la influencia de la temperatura y la iluminación en la conductividad del material.
+Este proyecto simula el comportamiento de la resistencia en un fotoresistor en función de la temperatura y la iluminación. Está diseñado para analizar semiconductores basados en Sulfuro de Cadmio (**CdS**) y seleniuro de Cadmio (**CdSe**), ya que son estos los materiales más comunmente usados para la creación de este tipo de semiconductor debido a sus propiedades, se analizará su respuesta a distintas condiciones ambientales. Se basa en modelos físicos que consideran la generación y recombinación de portadores de carga, así como la influencia de la temperatura y la iluminación en la conductividad del material.
 
 ##  Fundamentos Teóricos
 Los fotoresistores son dispositivos semiconductores cuya resistencia eléctrica varía en función de la intensidad luminosa que incide sobre ellos. Este comportamiento se debe a la generación de pares electrón-hueco cuando los fotones con suficiente energía impactan el material. En este proyecto, se modelan las siguientes ecuaciones fundamentales:
@@ -98,6 +98,8 @@ El programa generará dos gráficos:
 
 1. **Variación de la resistencia con la temperatura**: muestra cómo cambia la resistencia en función de la temperatura en ausencia de luz.
 2. **Variación de la resistencia con la iluminación**: representa la resistencia en función de la intensidad luminosa incidente.
+
+La idea general de los resultados es simular en la medida de lo posible la hoja de datos que se podría conseguir del material creado con los parámetros ingresados.
 
 ## Tecnologías Usadas
 - **Python 3**
