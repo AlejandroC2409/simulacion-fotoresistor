@@ -1,7 +1,3 @@
----
-usemathjax: true
----
-
 # Simulación de Fotoresistores
 
 ## Descripción
@@ -11,10 +7,9 @@ Este proyecto simula el comportamiento de la resistencia en un fotoresistor en f
 Los fotoresistores son dispositivos semiconductores cuya resistencia eléctrica varía en función de la intensidad luminosa que incide sobre ellos. Este comportamiento se debe a la generación de pares electrón-hueco cuando los fotones con suficiente energía impactan el material. En este proyecto, se modelan las siguientes ecuaciones fundamentales:
 
 1. **Densidad intrínseca de portadores**:
-
-![Ecuación](https://latex.codecogs.com/svg.latex?n_i%20=%20\sqrt{N_c%20N_v}%20e^{-E_g%20/%20(2%20k_B%20T)})
-
-
+   \[
+   n_i = \sqrt{N_c N_v} e^{-E_g / (2 k_B T)}
+   \]
    Donde:
    - \( N_c \) y \( N_v \) son las densidades de estados efectivos en la banda de conducción y valencia.
    - \( E_g \) es la energía de banda prohibida del material.
@@ -54,30 +49,29 @@ Los fotoresistores son dispositivos semiconductores cuya resistencia eléctrica 
 - Implementación flexible que permite modificar parámetros como el dopaje y la geometría del dispositivo.
 
 ##  Estructura del Proyecto
-```
- ┣ fisica_de_semiconductores.py  # Código principal de simulación
+┣ fisica_de_semiconductores.py  # Código principal de simulación
  ┣ README.md                     # Documentación del proyecto
  ┗ dist/                          # Ejecutable generado con PyInstaller
-```
+
 
 ##  Instalación y Uso
 Este proyecto requiere **Python 3** y las siguientes librerías:
-```sh
+sh
 pip install numpy matplotlib
-```
+
 
 ### **Ejecutar la Simulación**
 #### **Desde Python**
 Para ejecutar la simulación desde Python, abre una terminal y escribe:
-```sh
+sh
 python fisica_de_semiconductores.py
-```
+
 
 #### **Desde el Ejecutable**
-Si deseas ejecutar la simulación sin necesidad de Python, usa el archivo generado en la carpeta `dist/`:
-```sh
+Si deseas ejecutar la simulación sin necesidad de Python, usa el archivo generado en la carpeta dist/:
+sh
 dist\fisica_de_semiconductores.exe
-```
+
 Esto abrirá el programa en la terminal y pedirá los siguientes parámetros de entrada:
 1. **Temperatura** en °C (-30 a 80).
 2. **Concentración de aceptores (Na)** en cm⁻³.
@@ -101,4 +95,3 @@ El programa generará dos gráficos:
 - **NumPy** para cálculos numéricos.
 - **Matplotlib** para visualización de datos.
 - **PyInstaller** para la generación de ejecutables.
-
