@@ -22,7 +22,7 @@ Los fotoresistores son dispositivos semiconductores cuya resistencia eléctrica 
 ![Ecuación 2](images/ecuacion_2.png)
 
    Donde:
-   - \( \mu_n \) y \( \mu_p \) son las movilidades de electrones y huecos.
+   - $\mu_n$ y \( \mu_p \) son las movilidades de electrones y huecos.
    - \( n_0 \) y \( p_0 \) son las concentraciones en equilibrio térmico.
 
 3. **Generación de portadores debido a la iluminación**:
