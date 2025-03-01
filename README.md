@@ -8,38 +8,34 @@ Los fotoresistores son dispositivos semiconductores cuya resistencia eléctrica 
 
 1. **Densidad intrínseca de portadores**:
 
-![Ecuación 1](images/ecuacion_1.png)
-
+$n_i = \sqrt{N_c N_v} e^{-E_g / (2 k_B T)}$
 
    Donde:
-   - \( N_c \) y \( N_v \) son las densidades de estados efectivos en la banda de conducción y valencia.
-   - \( E_g \) es la energía de banda prohibida del material.
-   - \( k_B \) es la constante de Boltzmann.
-   - \( T \) es la temperatura absoluta.
+   - $N_c$ y $N_v$ son las densidades de estados efectivos en la banda de conducción y valencia.
+   - $E_g$ es la energía de banda prohibida del material.
+   - $k_B$ es la constante de Boltzmann.
+   - $T$ es la temperatura absoluta.
 
 2. **Conductividad del material en oscuridad**:
-
-![Ecuación 2](images/ecuacion_2.png)
-
+   
+   $\sigma_{oscuridad} = q ( \mu_n n_0 + \mu_p p_0 )$
    Donde:
-   - $\mu_n$ y \( \mu_p \) son las movilidades de electrones y huecos.
-   - \( n_0 \) y \( p_0 \) son las concentraciones en equilibrio térmico.
+   - $\mu_n$ y $\mu_p$ son las movilidades de electrones y huecos.
+   - $n_0$ y $p_0$ son las concentraciones en equilibrio térmico.
 
 3. **Generación de portadores debido a la iluminación**:
-
-![Ecuación 3](images/ecuacion_3.png)
-
+   
+   $\Delta n = \frac{\alpha I_0 e^{-\alpha x}}{h c / \lambda} \tau$
    Donde:
-   - \( \alpha \) es el coeficiente de absorción del material.
-   - \( I_0 \) es la intensidad luminosa incidente.
-   - \( \lambda \) es la longitud de onda de la luz incidente.
-   - \( \tau \) es el tiempo de vida medio de los portadores.
+   - $\alpha$ es el coeficiente de absorción del material.
+   - $I_0$ es la intensidad luminosa incidente.
+   - $\lambda$ es la longitud de onda de la luz incidente.
+   - $\tau$ es el tiempo de vida medio de los portadores.
 
 4. **Resistencia bajo iluminación**:
 
-![Ecuación 4](images/ecuacion_4.png)
-
-   Donde \( \sigma_{luz} \) es la conductividad con la luz incidente y \( A \) es el área del fotoresistor.
+   $R_{luz} = \frac{L}{\sigma_{luz} A}$
+   Donde $\sigma_{luz}$ es la conductividad con la luz incidente y \( A \) es el área del fotoresistor.
 
 ##  Características del Proyecto
 - Simulación de la resistencia en **oscuridad** y **bajo iluminación**.
