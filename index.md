@@ -11,9 +11,10 @@ Este proyecto simula el comportamiento de la resistencia en un fotoresistor en f
 Los fotoresistores son dispositivos semiconductores cuya resistencia eléctrica varía en función de la intensidad luminosa que incide sobre ellos. Este comportamiento se debe a la generación de pares electrón-hueco cuando los fotones con suficiente energía impactan el material. En este proyecto, se modelan las siguientes ecuaciones fundamentales:
 
 1. **Densidad intrínseca de portadores**:
-   \[
-   n_i = \sqrt{N_c N_v} e^{-E_g / (2 k_B T)}
-   \]
+
+![Ecuación](https://latex.codecogs.com/svg.latex?n_i%20=%20\sqrt{N_c%20N_v}%20e^{-E_g%20/%20(2%20k_B%20T)})
+
+
    Donde:
    - \( N_c \) y \( N_v \) son las densidades de estados efectivos en la banda de conducción y valencia.
    - \( E_g \) es la energía de banda prohibida del material.
