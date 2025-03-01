@@ -7,9 +7,10 @@ Este proyecto simula el comportamiento de la resistencia en un fotoresistor en f
 Los fotoresistores son dispositivos semiconductores cuya resistencia eléctrica varía en función de la intensidad luminosa que incide sobre ellos. Este comportamiento se debe a la generación de pares electrón-hueco cuando los fotones con suficiente energía impactan el material. En este proyecto, se modelan las siguientes ecuaciones fundamentales:
 
 1. **Densidad intrínseca de portadores**:
-   \[
-   n_i = \sqrt{N_c N_v} e^{-E_g / (2 k_B T)}
-   \]
+
+![Ecuación 1](images/ecuacion_1.png)
+
+
    Donde:
    - \( N_c \) y \( N_v \) son las densidades de estados efectivos en la banda de conducción y valencia.
    - \( E_g \) es la energía de banda prohibida del material.
@@ -17,17 +18,17 @@ Los fotoresistores son dispositivos semiconductores cuya resistencia eléctrica 
    - \( T \) es la temperatura absoluta.
 
 2. **Conductividad del material en oscuridad**:
-   \[
-   \sigma_{oscuridad} = q ( \mu_n n_0 + \mu_p p_0 )
-   \]
+
+![Ecuación 2](images/ecuacion_2.png)
+
    Donde:
    - \( \mu_n \) y \( \mu_p \) son las movilidades de electrones y huecos.
    - \( n_0 \) y \( p_0 \) son las concentraciones en equilibrio térmico.
 
 3. **Generación de portadores debido a la iluminación**:
-   \[
-   \Delta n = \frac{\alpha I_0 e^{-\alpha x}}{h c / \lambda} \tau
-   \]
+
+![Ecuación 3](images/ecuacion_3.png)
+
    Donde:
    - \( \alpha \) es el coeficiente de absorción del material.
    - \( I_0 \) es la intensidad luminosa incidente.
@@ -35,9 +36,9 @@ Los fotoresistores son dispositivos semiconductores cuya resistencia eléctrica 
    - \( \tau \) es el tiempo de vida medio de los portadores.
 
 4. **Resistencia bajo iluminación**:
-   \[
-   R_{luz} = \frac{L}{\sigma_{luz} A}
-   \]
+
+![Ecuación 4](images/ecuacion_4.png)
+
    Donde \( \sigma_{luz} \) es la conductividad con la luz incidente y \( A \) es el área del fotoresistor.
 
 ##  Características del Proyecto
